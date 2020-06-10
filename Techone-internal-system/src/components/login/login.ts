@@ -13,7 +13,7 @@ export class Login {
     
     loginUser(user){
         console.log(user)
-        this.API.loginUser(user).subscribe((res )=> {
+        this.API.loginUser(user).subscribe((res)=> {
             if(res === null) {
                 window.alert("incorrect username and password");
                 console.log(res);

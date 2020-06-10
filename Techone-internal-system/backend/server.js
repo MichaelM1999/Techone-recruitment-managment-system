@@ -24,11 +24,17 @@ app.use('/', router);
 //   })
 
   //routes
-  router.route('/user/login').post((req, res) => {
-    console.log(req.body);
-    res.json(req.body);
-    //once database is set logic for authentification goes here
-    })
+router.route('/user/login').post((req, res) => {
+  console.log(req.body);
+  res.json(req.body);
+  //once database is set logic for authentification goes here
+})
+
+router.route('/user/create').post((req, res) => {
+  console.log(req.body);
+  res.json(req.body);
+})
+
 app.listen(PORT, () => {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 })

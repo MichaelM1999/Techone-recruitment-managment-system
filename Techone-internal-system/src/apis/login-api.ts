@@ -15,7 +15,7 @@ export interface user {
     return this.http.post(this.uri + `/user/login`, user);
   }
   createUser(user) {
-    return this.http.post(this.uri + '/user.create', user);
+    return this.http.post(this.uri + '/user/create', user);
   }
   testRoute(){
     return this.http.get(`/foo`);
