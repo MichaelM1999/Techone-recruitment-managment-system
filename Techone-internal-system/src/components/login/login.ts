@@ -16,8 +16,11 @@ export class Login {
         this.API.loginUser(user).subscribe((res )=> {
             if(res === null) {
                 window.alert("incorrect username and password");
-            } else {
                 console.log(res);
+            } else {
+                sessionStorage.setItem('username', res['username']);
+                console.log(res)
+                // window.location.href = '/src/dashboard';
             }
         })
 

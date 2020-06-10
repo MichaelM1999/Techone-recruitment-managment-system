@@ -6,7 +6,7 @@ export interface user {
   }
   @Injectable()
   export class loginRoutes {
-  
+  //in prod uri goes away
     uri = "http://localhost:4202"
   
       constructor(private http: HttpClient){

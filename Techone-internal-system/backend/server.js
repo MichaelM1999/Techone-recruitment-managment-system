@@ -13,6 +13,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use('/', router);
+
+
 //!needed for hosting prod not local!
 // const distDir = __dirname + "/dist/";
 // app.use(express.static(distDir));
@@ -24,7 +26,8 @@ app.use('/', router);
   //routes
   router.route('/user/login').post((req, res) => {
     console.log(req.body);
-    res.json('hello');
+    res.json(req.body);
+    //once database is set logic for authentification goes here
     })
 app.listen(PORT, () => {
     console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
