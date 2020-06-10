@@ -20,7 +20,7 @@ export class Login {
             } else {
                 sessionStorage.setItem('username', res['username']);
                 console.log(res)
-                // window.location.href = '/src/dashboard';
+                window.location.href = '/src/dashboard';
             }
         })
 
