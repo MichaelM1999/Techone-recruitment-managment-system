@@ -11,6 +11,7 @@ import { Dashboard } from '../components/dashboard/dashboard';
 import { Login } from '../components/login/login';
 import { Navbar } from '../components/navbar/nabar';
 import { Forms } from '../components/forms/forms';
+import { Account } from '../components/createAccount/account';
 //services
 import { loginRoutes } from '../apis/login-api';
 
@@ -21,6 +22,7 @@ import { loginRoutes } from '../apis/login-api';
     Login,
     Navbar,
     Forms,
+    Account,
   ],
   imports: [
     BrowserModule,
