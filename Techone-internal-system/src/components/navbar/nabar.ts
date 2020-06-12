@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
     public loggedUser:any
 
      ngOnInit(){
-         this.loggedUser = sessionStorage.getItem("username");
+         this.loggedUser = sessionStorage.getItem("Firstname");
      }
      logout(){
         this.loggedUser = null
