@@ -1,6 +1,6 @@
-<div class="navbar" *ngIf="loggedUser !== null">
+<div class="topnav" *ngIf="loggedUser !== null">
     <a [routerLink]="['/dashboard']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Dashboard</a>
     <a [routerLink]="['/forms']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Forms</a>
-    <a *ngIf="!loggedUser"  class="loginNav" [routerLink]="['/login']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">login</a>
-    <a *ngIf="loggedUser" (click)="logout()" class="loginNav" [routerLink]="['/login']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Logout {{loggedUser}}</a>
+    <a *ngIf="!loggedUser" class="loginNav" class="loginNav" [routerLink]="['/login']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">login</a>
+    <a *ngIf="loggedUser" class="loginNav" (click)="logout()" class="loginNav" [routerLink]="['/login']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Logout {{loggedUser}}</a>
 </div>
