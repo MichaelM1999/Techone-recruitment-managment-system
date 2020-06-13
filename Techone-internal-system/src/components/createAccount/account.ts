@@ -13,7 +13,6 @@ export class Account {
     createUserCheck(user){
         if (user.username.length < 8 || user.password.length < 8){
             window.alert("username and Password must be at least 8 charactars");
-        
         }
         else if (user.username === '' || user.password === '' || user.Email === '' || user.Firstname === '' || user.Lastname === ''){
             window.alert('Must fill in all required fields.');
